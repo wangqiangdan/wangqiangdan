@@ -10,7 +10,7 @@ app.set('port', process.env.PORT || 3000); // 配置全局变量 post
 app.use(express.static(__dirname + '/public'));
 app.get('/', function (req, res) {
     res.render('home');
-})
+});
 app.get('/about', function (req, res) {
     res.render('about', {
         fortune: fortune.getFortunes()
